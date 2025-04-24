@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // "createhalf","file1source.s4p", "0.s4p", "out_half.s4p"
+    // "cascade", "file1source.s4p", "out_half.s4p", "ri"
+    // "createhalf","file1source.s4p", "db"
+    // "diff", "file1source.s4p", "out_half.s4p", "ma"
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Python Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": ["cascade", "file1source.s4p", "out_half.s4p", "ma"]
+        }
+    ]
+}
