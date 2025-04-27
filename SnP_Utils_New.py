@@ -12,6 +12,7 @@ import skrf as rf
 
 import matplotlib.pyplot as plt
 from pathlib import Path
+import numpy as np
 import sys
 
 app_dir = Path(__file__).resolve().parent
@@ -128,6 +129,7 @@ def create_bisect_network(input_file: Path, SnP_format) -> Path:
 	if (ntw1.nports == 4): # s4p
 		dm = rf.IEEEP370_MM_NZC_2xThru(dummy_2xthru = ntw1, z0 = 50, name = '2xthru')
 	else: # s2p
+		
 		dm = rf.IEEEP370_SE_NZC_2xThru(dummy_2xthru = ntw1, z0 = 50, name = '2xthru')
 		
 	fix1 = dm.se_side1
